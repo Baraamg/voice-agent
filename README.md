@@ -93,7 +93,7 @@ copy .env.example .env
 # macOS/Linux
 cp .env.example .env    
 ```
-# 2. ⚠️ IMPORTANT: Set API Key in .env file
+# ⚠️ IMPORTANT: Set API Key in .env file
 
 ### [YOU CAN FIND IT HERE](https://www.notion.so/IMPORTANT-Set-API-Key-in-env-file-23835cbce5dc8090bbc2db44b9128bb6?source=copy_link)
 
