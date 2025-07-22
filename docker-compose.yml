@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  voiceagent-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./data:/app/data
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    restart: unless-stopped
+    
+  voiceagent-frontend:
+    build: .
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - voiceagent-api
+    environment:
+      - API_BASE_URL=http://voiceagent-api:8000
+    restart: unless-stopped
+
+volumes:
+  uploads:
+  data:
