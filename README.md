@@ -94,9 +94,8 @@ copy .env.example .env
 cp .env.example .env    
 ```
 # 2. ⚠️ IMPORTANT: Set API Key in .env file
-```bash
-GROQ_API_KEY=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
-```
+
+### [YOU CAN FIND IT HERE](https://www.notion.so/IMPORTANT-Set-API-Key-in-env-file-23835cbce5dc8090bbc2db44b9128bb6?source=copy_link)
 
 ### ▶️ Run
 
